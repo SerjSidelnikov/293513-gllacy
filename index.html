@@ -40,10 +40,10 @@
         <div class="login">
           <a href="#">Вход</a>
           <div class="login-popup">
-            <form action="#" method="get">
+            <form action="https://echo.htmlacademy.ru" method="post">
               <input type="text" name="email" placeholder="Электронная почта">
               <input type="text" name="password" placeholder="Пароль">
-              <button type="submit">Войти</button>
+              <button class="btn" type="submit">Войти</button>
               <div class="login-href">
                 <a href="#">Забыли пароль?</a>
                 <a href="#">Новая регистрация</a>
@@ -216,6 +216,18 @@
       </section>
     </div>
   </footer>
+
+  <div class="modal-content">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <h2 class="modal-content-title">Мы обязательно вам ответим!</h2>
+
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+      <input type="text" name="name" placeholder="Как вас зовут?">
+      <input type="text" name="email" placeholder="Ваша почта для ответа?">
+      <textarea name="comment" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+      <button class="btn" type="submit">Отправить</button>
+    </form>
+  </div>
 
   </body>
 </html>
