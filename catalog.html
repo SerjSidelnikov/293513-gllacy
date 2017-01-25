@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Глейси-каталог</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <header class="main-header">
       <div class="container">
         <div class="logo">
-          <a href="index.html"><img src="img/logo.png" width="154" height="64" alt="GllacyShop"></a>
+          <a href="index.html"><img src="img/index-logo.png" width="154" height="64" alt="GllacyShop"></a>
         </div>
 
         <nav class="main-navigation">
@@ -60,7 +61,7 @@
                 <a href="#">Удалить</a>
 
                 <div class="basket-item-title">
-                  <img src="img/ice1-mini.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"> Пломбир с апельсиновым джемом
+                  <img src="img/ice1-mini.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"> Пломбир с апельсиновым джемом
                 </div>
 
                 <div class="basket-item-count">
@@ -76,7 +77,7 @@
                 <a href="#">Удалить</a>
 
                 <div class="basket-item-title">
-                  <img src="img/ice2-mini.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"> Клубничный пломбир с присыпкой из белого шоколада
+                  <img src="img/ice2-mini.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"> Клубничный пломбир с присыпкой из белого шоколада
                 </div>
 
                 <div class="basket-item-count">
@@ -128,8 +129,8 @@
           <input type="range" name="price">
         </div>
 
-        <div class="fat">
-          <div class="fat-title">Жирность:</div>
+        <fieldset class="fat">
+          <legend class="fat-title">Жирность:</legend>
           <label>
             <input type="radio" name="fat"> 0%
           </label>
@@ -142,10 +143,10 @@
           <label>
             <input type="radio" name="fat"> свыше 30%
           </label>
-        </div>
+        </fieldset>
 
-        <div class="fillers">
-          <div class="fillers-title">Наполнители:</div>
+        <fieldset class="fillers">
+          <legend class="fillers-title">Наполнители:</legend>
           <label>
             <input type="checkbox" name="chocolate" checked> шоколадные
           </label>
@@ -161,7 +162,7 @@
           <label>
             <input type="checkbox" name="jam"> джемы
           </label>
-        </div>
+        </fieldset>
 
         <button type="submit">Применить</button>
       </form>
@@ -170,7 +171,7 @@
         <article class="item">
           <div class="item-content">
             <div class="item-content-img">
-              <img src="img/item-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              <img src="img/item-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             </div>
             <p class="item-content-price">
               <span>310</span>
@@ -187,7 +188,7 @@
         <article class="item">
           <div class="item-content">
             <div class="item-content-img">
-              <img src="img/item-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+              <img src="img/item-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
             </div>
             <p class="item-content-price">
               <span>380</span>
@@ -204,7 +205,7 @@
         <article class="item">
           <div class="item-content">
             <div class="item-content-img">
-              <img src="img/item-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              <img src="img/item-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             </div>
             <p class="item-content-price">
               <span>355</span>
@@ -221,7 +222,7 @@
         <article class="item">
           <div class="item-content">
             <div class="item-content-img">
-              <img src="img/item-4.png" width="267" height="267" alt="Сливочнео крем-брюле с карамельной подливкой">
+              <img src="img/item-4.jpg" width="267" height="267" alt="Сливочнео крем-брюле с карамельной подливкой">
             </div>
             <p class="item-content-price">
               <span>415</span>
@@ -238,7 +239,7 @@
         <article class="item">
           <div class="item-content">
             <div class="item-content-img">
-              <img src="img/item-5.png" width="267" height="267" alt="Сливочное с брусничным джемом">
+              <img src="img/item-5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
             </div>
             <p class="item-content-price">
               <span>325</span>
@@ -255,7 +256,7 @@
         <article class="item">
           <div class="item-content">
             <div class="item-content-img">
-              <img src="img/item-6.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
+              <img src="img/item-6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
             </div>
             <p class="item-content-price">
               <span>410</span>
@@ -272,7 +273,7 @@
         <article class="item">
           <div class="item-content">
             <div class="item-content-img">
-              <img src="img/item-7.png" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
+              <img src="img/item-7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
             </div>
             <p class="item-content-price">
               <span>375</span>
@@ -289,7 +290,7 @@
         <article class="item">
           <div class="item-content">
             <div class="item-content-img">
-              <img src="img/item-8.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
+              <img src="img/item-8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
             </div>
             <p class="item-content-price">
               <span>320</span>
@@ -306,7 +307,7 @@
         <article class="item">
           <div class="item-content">
             <div class="item-content-img">
-              <img src="img/item-9.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
+              <img src="img/item-9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
             </div>
             <p class="item-content-price">
               <span>440</span>
@@ -323,7 +324,7 @@
         <article class="item">
           <div class="item-content">
             <div class="item-content-img">
-              <img src="img/item-10.png" width="267" height="267" alt="Сливочное с ментоловым сиропом">
+              <img src="img/item-10.jpg" width="267" height="267" alt="Сливочное с ментоловым сиропом">
             </div>
             <p class="item-content-price">
               <span>435</span>
@@ -340,7 +341,7 @@
         <article class="item">
           <div class="item-content">
             <div class="item-content-img">
-              <img src="img/item-11.png" width="267" height="267" alt="Сливочное с кусочками чёрного шоколада">
+              <img src="img/item-11.jpg" width="267" height="267" alt="Сливочное с кусочками чёрного шоколада">
             </div>
             <p class="item-content-price">
               <span>355</span>
@@ -357,7 +358,7 @@
         <article class="item">
           <div class="item-content">
             <div class="item-content-img">
-              <img src="img/item-12.png" width="267" height="267" alt="Сливочное с мятным сиропом">
+              <img src="img/item-12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
             </div>
             <p class="item-content-price">
               <span>420</span>
