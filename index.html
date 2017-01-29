@@ -3,18 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <header class="main-header">
-      <div class="container">
-        <div class="logo">
-          <img src="img/index-logo.png" width="154" height="64" alt="GllacyShop">
-        </div>
-
+      <div class="container flex-header">
         <nav class="main-navigation">
-          <ul>
+          <ul class="navigation">
+            <li>
+              <div class="logo">
+                <img src="img/index-logo.png" width="154" height="64" alt="GllacyShop">
+              </div>
+            </li>
             <li>
               <a href="#">Каталог</a>
               <ul class="main-navigation-sub">
@@ -67,17 +69,17 @@
 
     <main class="container">
       <section class="slider">
-        <div class="slide">
+        <div class="slide slide-1">
           <p class="slide-title">Крем-брюле и пломбир с малиновым джемом</p>
           <a class="btn" href="#">Давайте оба!</a>
         </div>
 
-        <div class="slide">
+        <div class="slide slide-2">
           <p class="slide-title">Шоколадный пломбир и лимонный сорбет</p>
           <a class="btn" href="#">Давайте оба!</a>
         </div>
 
-        <div class="slide">
+        <div class="slide slide-3">
           <p class="slide-title">Пломбир с помадкой и клубничный щербет</p>
           <a class="btn" href="#">Давайте оба!</a>
         </div>
@@ -220,7 +222,7 @@
     </main>
 
     <footer class="main-footer">
-      <div class="container">
+      <div class="container flex-footer">
         <section class="footer-social">
           <a class="btn-social" href="#">Твиттер</a>
           <a class="btn-social" href="#">Инстаграм</a>
