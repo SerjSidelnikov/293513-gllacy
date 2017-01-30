@@ -17,11 +17,12 @@ body {
 /*header*/
 .flex-header {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 10px;
 }
 
 .main-navigation {
-  width: 700px;
+  width: 850px;
   margin-right: auto;
 }
 
@@ -41,23 +42,36 @@ body {
   padding: 0;
 }
 
+.sub {
+  position: relative;
+}
+
 .main-navigation-sub {
+  position: absolute;
+  display: none;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.sub:hover .main-navigation-sub {
+  display: block;
+}
+
+.logo {
+  width: 154px;
+  height: 64px;
+}
+
 .user-block {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  width: 270px;
+  align-items: flex-start;
+  margin-left: auto;
 }
 
 .search {
-
+  margin-right: 10px;
+  padding: 13px 0;
 }
 
 .search-popup {
@@ -65,7 +79,8 @@ body {
 }
 
 .login {
-  order: -1;
+  margin-right: 10px;
+  padding: 13px 0;
 }
 
 .login-popup {
@@ -73,7 +88,7 @@ body {
 }
 
 .basket {
-  order: -2;
+  padding: 13px 0;
 }
 
 .basket-popup {
@@ -82,7 +97,7 @@ body {
 
 .meta {
   width: 170px;
-  margin-top: 15px;
+  margin-left: auto;
 }
 
 /*index*/
@@ -188,16 +203,13 @@ body {
   margin-right: 20px;
 }
 
-h1 {
-  margin-bottom: 25px;
-}
-
 .settings {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
   width: 880px;
+  margin-top: 25px;
   margin-bottom: 40px;
 }
 
