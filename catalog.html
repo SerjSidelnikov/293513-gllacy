@@ -33,76 +33,78 @@
           </ul>
         </nav>
 
-        <div class="user-block">
-          <div class="search">
-            <a href="#">Поиск</a>
-            <div class="search-popup">
-              <input type="text" name="search" placeholder="Что ищем?">
+        <div class="user-info">
+          <div class="user-block">
+            <div class="search">
+              <a href="#">Поиск</a>
+              <div class="search-popup">
+                <input type="text" name="search" placeholder="Что ищем?">
+              </div>
+            </div>
+
+            <div class="login">
+              <a href="#">Вход</a>
+              <div class="login-popup">
+                <form action="https://echo.htmlacademy.ru" method="post">
+                  <input type="text" name="email" placeholder="Электронная почта">
+                  <input type="text" name="password" placeholder="Пароль">
+                  <button class="btn" type="submit">Войти</button>
+                  <div class="login-href">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="basket">
+              <a href="#">2 товара</a>
+
+              <section class="basket-popup">
+                <div class="basket-item">
+                  <a href="#">Удалить</a>
+
+                  <div class="basket-item-title">
+                    <img src="img/ice1-mini.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"> Пломбир с апельсиновым джемом
+                  </div>
+
+                  <div class="basket-item-count">
+                    1,5 кг <span>x 200 руб.</span>
+                  </div>
+
+                  <div class="basket-item-price">
+                    300 руб.
+                  </div>
+                </div>
+
+                <div class="basket-item">
+                  <a href="#">Удалить</a>
+
+                  <div class="basket-item-title">
+                    <img src="img/ice2-mini.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"> Клубничный пломбир с присыпкой из белого шоколада
+                  </div>
+
+                  <div class="basket-item-count">
+                    1,5 кг <span>x 300 руб.</span>
+                  </div>
+
+                  <div class="basket-item-price">
+                    450 руб.
+                  </div>
+                </div>
+
+                <div class="basket-total">
+                  Итого: 750 руб.
+                </div>
+                <a class="btn" href="#">Оформить заказ</a>
+              </section>
             </div>
           </div>
 
-          <div class="login">
-            <a href="#">Вход</a>
-            <div class="login-popup">
-              <form action="https://echo.htmlacademy.ru" method="post">
-                <input type="text" name="email" placeholder="Электронная почта">
-                <input type="text" name="password" placeholder="Пароль">
-                <button class="btn" type="submit">Войти</button>
-                <div class="login-href">
-                  <a href="#">Забыли пароль?</a>
-                  <a href="#">Новая регистрация</a>
-                </div>
-              </form>
-            </div>
+          <div class="meta">
+            <span class="meta-time">С 10 до 20, ежедневно</span>
+            <span class="meta-number">8 812 450-25-25</span>
           </div>
-
-          <div class="basket">
-            <a href="#">2 товара</a>
-
-            <section class="basket-popup">
-              <div class="basket-item">
-                <a href="#">Удалить</a>
-
-                <div class="basket-item-title">
-                  <img src="img/ice1-mini.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"> Пломбир с апельсиновым джемом
-                </div>
-
-                <div class="basket-item-count">
-                  1,5 кг <span>x 200 руб.</span>
-                </div>
-
-                <div class="basket-item-price">
-                  300 руб.
-                </div>
-              </div>
-
-              <div class="basket-item">
-                <a href="#">Удалить</a>
-
-                <div class="basket-item-title">
-                  <img src="img/ice2-mini.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"> Клубничный пломбир с присыпкой из белого шоколада
-                </div>
-
-                <div class="basket-item-count">
-                  1,5 кг <span>x 300 руб.</span>
-                </div>
-
-                <div class="basket-item-price">
-                  450 руб.
-                </div>
-              </div>
-
-              <div class="basket-total">
-                Итого: 750 руб.
-              </div>
-              <a class="btn" href="#">Оформить заказ</a>
-            </section>
-          </div>
-        </div>
-
-        <div class="meta">
-          <span class="meta-time">С 10 до 20, ежедневно</span>
-          <span class="meta-number">8 812 450-25-25</span>
         </div>
       </div>
     </header>
