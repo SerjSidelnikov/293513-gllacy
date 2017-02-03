@@ -5,7 +5,7 @@ body {
   line-height: 22px;
   font-family: "Roboto", "Arial", sans-serif;
   color: #000000;
-  background-color: #849d8f;
+  background: #849d8f url("../img/ice-1.png") no-repeat center top;
 }
 
 .container {
@@ -36,13 +36,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.navigation > li {
-  padding: 10px 15px;
 }
 
 .navigation > li:first-child {
@@ -52,14 +49,20 @@ body {
 
 .sub {
   position: relative;
+  padding: 10px 0;
 }
 
 .main-navigation-sub {
   position: absolute;
+  top: 40px;
+  left: -5px;
   display: none;
+  width: 145px;
   margin: 0;
   padding: 0;
   list-style: none;
+  background-color: #f7f6f3;
+  border-radius: 5px;
 }
 
 .sub:hover .main-navigation-sub {
@@ -71,9 +74,80 @@ body {
   height: 64px;
 }
 
+.navigation li > a {
+  margin: 5px 15px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  vertical-align: top;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navigation li > a:hover {
+  margin: 0;
+  padding: 5px 15px;
+  color: #000000;
+  background-color: #f7f6f3;
+  border-radius: 20px;
+}
+
+.navigation li > a:active {
+  box-shadow: inset 0 2px 1px #696969;
+}
+
+.main-navigation-sub li > a {
+  display: block;
+  margin: 0;
+  padding: 10px 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  border: none;
+}
+
+.main-navigation-sub .new {
+  position: relative;
+  font-weight: 700;
+}
+
+.main-navigation-sub .new::after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  left: 10px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.main-navigation-sub .new:hover {
+  border-radius: 5px 5px 0 0;
+}
+
+.main-navigation-sub li > a:hover {
+  padding: 10px 20px;
+  background-color: #fbded8;
+  border-radius: 0;
+}
+
+.main-navigation-sub li:last-child a:hover {
+  border-radius: 0 0 5px 5px;
+}
+
+.main-navigation-sub li > a:active {
+  background-color: #f6b5a5;
+}
+
+.main-navigation-sub .active {
+  background-color: #d07058;
+}
+
 .user-info {
-  -ms-flex-preferred-size: 265px;
-  flex-basis: 265px;
+  /*-ms-flex-preferred-size: 265px;*/
+  /*flex-basis: 265px;*/
 }
 
 .user-block {
@@ -85,15 +159,30 @@ body {
   justify-content: flex-end;
   -webkit-box-align: start;
   -ms-flex-align: start;
-  align-items: flex-start;
-  -ms-flex-preferred-size: 265px;
-  flex-basis: 265px;
+  align-items: center;
+  /*-ms-flex-preferred-size: 265px;*/
+  /*flex-basis: 265px;*/
   margin-left: auto;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .search {
   margin-right: 10px;
   padding: 13px 0;
+}
+
+.search a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  font-size: 0;
+  background: rgba(255, 255, 255, 0.2) url("../img/spritesheet.png") no-repeat 3px -268px;
+  border-radius: 50%;
+}
+
+.search a:hover {
+  background: #ffffff url("../img/spritesheet.png") no-repeat 3px -294px;
 }
 
 .search-popup {
@@ -105,12 +194,44 @@ body {
   padding: 13px 0;
 }
 
+.login a {
+  display: block;
+  padding: 8px 15px;
+  padding-left: 45px;
+  font-weight: 500;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2) url("../img/spritesheet.png") no-repeat 10px -212px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.login a:hover {
+  color: #000000;
+  background: #ffffff url("../img/spritesheet.png") no-repeat 10px -240px;
+}
+
 .login-popup {
   display: none;
 }
 
 .basket {
-  padding: 13px 0;
+  width: 118px;
+  text-align: left;
+}
+
+.basket a {
+  display: block;
+  padding: 8px 15px 8px 45px;
+  font-weight: 500;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2) url("../img/spritesheet.png") no-repeat 10px -45px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.basket a:hover {
+  color: #000000;
+  background: #ffffff url("../img/spritesheet.png") no-repeat 10px -74px;
 }
 
 .basket-popup {
@@ -118,8 +239,25 @@ body {
 }
 
 .meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   width: 170px;
+  margin-top: 5px;
   margin-left: auto;
+  color: #ffffff;
+}
+
+.meta-time {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.meta-number {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 24px;
 }
 
 /*index*/
