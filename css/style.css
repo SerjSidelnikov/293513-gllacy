@@ -588,7 +588,7 @@ body {
   color: #ffffff;
 }
 
-.item-content::before {
+.hit::before {
   content: '';
   position: absolute;
   top: 0;
@@ -635,15 +635,20 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.item:hover a {
+  border: none;
+}
+
 .item-hover {
   position: absolute;
-  top: 0;
+  top: -10px;
   left: -10px;
   right: -10px;
+  z-index: 2;
   display: none;
   padding: 10px;
   flex-basis: calc(24.4% * (100 / (100 - 2 * 2.3)));
-  height: 405px;
+  height: 125%;
   background-color: rgba(255, 255, 255, 0.2);
   text-align: center;
   border-radius: 10px;
@@ -652,6 +657,8 @@ body {
 
 .item-hover .btn {
   position: relative;
+  top: 88%;
+  display: inline-block;
   margin: 0;
   padding: 10px 15px;
   font-weight: 700;
@@ -759,14 +766,69 @@ body {
   -ms-flex-preferred-size: calc(46.6% * (100 / (100 - 2 * 2.3)));
   flex-basis: calc(46.6% * (100 / (100 - 2 * 2.3)));
   padding: 25px 20px;
+  background: #ffffff url("../img/strawberry-bg.jpg") no-repeat center;
+  border-radius: 15px;
   box-sizing: border-box;
+}
+
+.index-post-news p {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.index-post-news a {
+  display: inline-block;
+  width: 300px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.index-post-news a:hover {
+  color: #e84d37;
 }
 
 .index-post-newsletter {
   -ms-flex-preferred-size: calc(46.6% * (100 / (100 - 2 * 2.3)));
   flex-basis: calc(46.6% * (100 / (100 - 2 * 2.3)));
-  padding: 35px 25px;
+  padding: 5px;
+  background: #f8f7f4 url("../img/letter-pattern.png");
+  border-radius: 15px;
   box-sizing: border-box;
+}
+.index-post-newsletter .border {
+  padding: 30px 20px;
+  background-color: #f8f7f4;
+  border-radius: 15px;
+}
+
+.index-post-newsletter p {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.index-post-newsletter input {
+  width: 345px;
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+  border-radius: 5px;
+  border: 1px solid #b2b2b2;
+}
+
+.index-post-newsletter .btn {
+  padding: 10px 15px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  border-radius: 25px;
+  border: none;
 }
 
 .index-map {
