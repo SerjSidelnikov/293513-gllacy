@@ -69,6 +69,7 @@ body {
   position: absolute;
   top: 40px;
   left: -5px;
+  z-index: 3;
   display: none;
   width: 145px;
   margin: 0;
@@ -96,6 +97,14 @@ body {
   color: #ffffff;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navigation .active-menu {
+  margin: 0;
+  padding: 5px 15px;
+  background-color: #d07058;
+  border: none;
+  border-radius: 20px;
 }
 
 .navigation li > a:hover {
@@ -249,6 +258,7 @@ body {
   position: absolute;
   top: 50px;
   left: -185px;
+  z-index: 3;
   display: none;
   width: 240px;
   padding: 20px;
@@ -332,7 +342,8 @@ body {
   text-decoration: none;
 }
 
-.basket > a:hover {
+.basket > a:hover,
+.basket .inner-basket {
   color: #000000;
   background: #ffffff url("../img/spritesheet.png") no-repeat 10px -74px;
 }
@@ -341,6 +352,7 @@ body {
   position: absolute;
   top: 50px;
   right: 0;
+  z-index: 3;
   display: none;
   width: 500px;
   padding: 20px;
@@ -522,8 +534,6 @@ body {
 }
 
 .index-banner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
@@ -572,8 +582,6 @@ body {
 }
 
 .index-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
 }
