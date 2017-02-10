@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body>
+  <body class="body-ice1">
     <header class="main-header">
       <div class="container flex-header">
         <nav class="main-navigation">
@@ -72,7 +72,7 @@
 
     <main class="container">
       <section class="slider">
-        <div class="slide slide-1">
+        <div class="slide slide-1 slide-show">
           <p class="slide-title">Крем-брюле и пломбир с малиновым джемом</p>
           <a class="btn" href="#">Давайте оба!</a>
         </div>
@@ -87,9 +87,11 @@
           <a class="btn" href="#">Давайте оба!</a>
         </div>
 
-        <button class="active" id="slide-1" type="button">1</button>
-        <button id="slide-2" type="button">2</button>
-        <button id="slide-3" type="button">3</button>
+        <div class="slider-control">
+          <button class="active" id="slide-1" type="button">1</button>
+          <button id="slide-2" type="button">2</button>
+          <button id="slide-3" type="button">3</button>
+        </div>
       </section>
 
       <section class="index-banner">
@@ -207,7 +209,10 @@
       </section>
 
       <div class="index-map">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=zD03IFQ2pD0CM1pSjXfpZn5_1cA9m8jw&amp;max-width=1200&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+        <div class="index-map-img">
+          <img src="img/map.jpg" width="1205" height="430" alt="Карта">
+        </div>
+        <div id="yandex-map"></div>
 
         <section class="index-map-info">
           <p>
@@ -261,5 +266,11 @@
       </form>
     </div>
 
+    <div class="modal-overlay"></div>
+
+
+    <script src="js/script.js"></script>
+
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=zD03IFQ2pD0CM1pSjXfpZn5_1cA9m8jw&amp;max-width=1200&amp;height=430&amp;id=yandex-map&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
   </body>
 </html>
