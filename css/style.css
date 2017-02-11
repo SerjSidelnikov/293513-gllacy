@@ -521,7 +521,7 @@ body {
 
 .slide .btn {
   display: inline-block;
-  padding: 15px 40px;
+  padding: 10px 40px;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -575,7 +575,7 @@ body {
 }
 
 .banner {
-  flex-basis: calc(46.6% * (100 / (100 - 2 * 2.3)));
+  width: calc(46.6% * (100 / (100 - 2 * 2.3)));
   padding: 20px;
   font-weight: 700;
   font-size: 18px;
@@ -599,7 +599,7 @@ body {
 
 .banner .btn {
   display: block;
-  width: 165px;
+  width: 125px;
   margin-left: auto;
   padding: 12px 20px;
   font-size: 18px;
@@ -608,7 +608,12 @@ body {
   border-radius: 25px;
 }
 
+.banner-chocolate .btn {
+  width: 150px;
+}
+
 .banner-raspberry {
+  margin-right: 25px;
   background: #ad2f4d url("../img/raspberry-bg.jpg") center;
 }
 
@@ -709,8 +714,9 @@ body {
 }
 
 .item-hover .btn {
-  position: relative;
-  top: 92%;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
   display: inline-block;
   margin: 0;
   padding: 10px 15px;
@@ -719,6 +725,8 @@ body {
   line-height: 24px;
   vertical-align: top;
   border-radius: 25px;
+  transform: translateX(-50%);
+
 }
 
 .item:hover .item-hover {
@@ -738,7 +746,7 @@ body {
 }
 
 .index-about-title {
-  flex-grow: 1;
+  width: 100%;
   margin: 0;
   margin-bottom: 5px;
   font-weight: 500;
@@ -748,7 +756,7 @@ body {
 
 .index-about-left,
 .index-about-right {
-  flex-basis: calc(46.6% * (100 / (100 - 2 * 2.3)));
+  width: calc(46.6% * (100 / (100 - 2 * 2.3)));
   padding-left: 55px;
   box-sizing: border-box;
 }
@@ -805,7 +813,7 @@ body {
 }
 
 .index-post-news {
-  flex-basis: calc(46.6% * (100 / (100 - 2 * 2.3)));
+  width: calc(46.6% * (100 / (100 - 2 * 2.3)));
   padding: 25px 20px;
   background: #ffffff url("../img/strawberry-bg.jpg") no-repeat 45px -220px;
   border-radius: 15px;
@@ -834,7 +842,7 @@ body {
 }
 
 .index-post-newsletter {
-  flex-basis: calc(46.6% * (100 / (100 - 2 * 2.3)));
+  width: calc(46.6% * (100 / (100 - 2 * 2.3)));
   padding: 5px;
   background: #f8f7f4 url("../img/letter-pattern.png");
   border-radius: 15px;
@@ -1264,12 +1272,17 @@ body {
   color: #ffffff;
 }
 
-.inner-footer::before {
+.main-footer {
+  position: relative;
+}
+
+.main-footer::after {
   content: '';
   position: absolute;
   top: 0;
-  left: 25px;
-  right: 25px;
+  left: 50%;
+  width: 1150px;
+  margin-left: -575px;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.3);
 }
