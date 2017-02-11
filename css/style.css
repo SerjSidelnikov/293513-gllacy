@@ -673,8 +673,8 @@ center;
 
 .item-content-price {
   position: absolute;
-  left: 0;
-  bottom: 5%;
+  left: 1px;
+  bottom: 6%;
   margin: 0;
   font-size: 30px;
   line-height: 45px;
