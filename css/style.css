@@ -36,8 +36,7 @@ body {
 }
 
 .inner-page {
-  background: #849d8f url("../img/innder-bg.png") no-repeat top
-center;
+  background: #849d8f linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, #849d8f 40%);
 }
 
 .container {
