@@ -25,7 +25,7 @@ var contentLetter = document.querySelector(".index-post-newsletter");
 var formLetter = contentLetter.querySelector("form");
 var letter = formLetter.querySelector("input");
 
-var bodySlider = document.querySelector("body");
+var bodySlider = document.querySelector(".wrapper");
 var slide1 = document.querySelector(".slide-1");
 var slide2 = document.querySelector(".slide-2");
 var slide3 = document.querySelector(".slide-3");
