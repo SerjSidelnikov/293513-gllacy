@@ -45,7 +45,17 @@ body {
 }
 
 .inner-container {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);;
+  position: relative;
+}
+
+.inner-container::after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 2.3%;
+  right: 2.3%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .btn {
@@ -219,12 +229,12 @@ body {
   width: 32px;
   height: 32px;
   font-size: 0;
-  background: rgba(255, 255, 255, 0.2) url("../img/spritesheet.png") no-repeat 3px -268px;
+  background: rgba(255, 255, 255, 0.2) url("../img/sprit-width-42px.png") no-repeat 3px -268px;
   border-radius: 50%;
 }
 
 .search a:hover {
-  background: #ffffff url("../img/spritesheet.png") no-repeat 3px -294px;
+  background: #ffffff url("../img/sprit-width-42px.png") no-repeat 3px -294px;
 }
 
 .search-popup {
@@ -277,14 +287,14 @@ body {
   padding-left: 45px;
   font-weight: 500;
   color: #ffffff;
-  background: rgba(255, 255, 255, 0.2) url("../img/spritesheet.png") no-repeat 10px -212px;
+  background: rgba(255, 255, 255, 0.2) url("../img/sprit-width-42px.png") no-repeat 10px -212px;
   border-radius: 20px;
   text-decoration: none;
 }
 
 .login > a:hover {
   color: #000000;
-  background: #ffffff url("../img/spritesheet.png") no-repeat 10px -240px;
+  background: #ffffff url("../img/sprit-width-42px.png") no-repeat 10px -240px;
 }
 
 .login-popup {
@@ -371,7 +381,7 @@ body {
   padding: 8px 15px 8px 45px;
   font-weight: 500;
   color: #ffffff;
-  background: rgba(255, 255, 255, 0.2) url("../img/spritesheet.png") no-repeat 10px -45px;
+  background: rgba(255, 255, 255, 0.2) url("../img/sprit-width-42px.png") no-repeat 10px -45px;
   border-radius: 20px;
   text-decoration: none;
 }
@@ -379,7 +389,7 @@ body {
 .basket > a:hover,
 .basket .inner-basket {
   color: #000000;
-  background: #ffffff url("../img/spritesheet.png") no-repeat 10px -74px;
+  background: #ffffff url("../img/sprit-width-42px.png") no-repeat 10px -74px;
 }
 
 .basket-popup {
@@ -661,7 +671,7 @@ body {
   z-index: 3;
   width: 61px;
   height: 61px;
-  background: url("../img/spritesheet-2.png") no-repeat -5px -64px;
+  background: url("../img/sprit-width-71px.png") no-repeat -5px -64px;
 }
 
 .item-content-img {
@@ -797,7 +807,7 @@ body {
   left: -55px;
   width: 50px;
   height: 50px;
-  background: url("../img/spritesheet-2.png") no-repeat -5px -135px;
+  background: url("../img/sprit-width-71px.png") no-repeat -5px -135px;
 }
 
 .index-about-left .sheet::before {
@@ -807,7 +817,7 @@ body {
   left: -55px;
   width: 50px;
   height: 50px;
-  background: url("../img/spritesheet-2.png") no-repeat -5px -194px;
+  background: url("../img/sprit-width-71px.png") no-repeat -5px -194px;
 }
 
 .index-about-right .row::before {
@@ -817,7 +827,7 @@ body {
   left: -55px;
   width: 50px;
   height: 50px;
-  background: url("../img/spritesheet-2.png") no-repeat -5px -5px;
+  background: url("../img/sprit-width-71px.png") no-repeat -5px -5px;
 }
 
 .index-about-right .thermometer::before {
@@ -827,7 +837,7 @@ body {
   left: -55px;
   width: 50px;
   height: 50px;
-  background: url("../img/spritesheet-2.png") no-repeat -5px -253px;
+  background: url("../img/sprit-width-71px.png") no-repeat -5px -253px;
 }
 
 .index-posts {
@@ -1150,6 +1160,12 @@ body {
   border-radius: 50%;
 }
 
+.fat-wrapper label:hover input + .checkbox-indicator {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ffffff;
+}
+
 .fat-wrapper input:checked + .checkbox-indicator::before {
   content: '';
   position: absolute;
@@ -1206,7 +1222,11 @@ body {
   left: 0;
   width: 20px;
   height: 20px;
-  background: url("../img/sprite-check.png") no-repeat -5px -29px;
+  background: url("../img/sprit-check-off.png") no-repeat -5px -5px;
+}
+
+.fillers-wrapper label:hover input[type="checkbox"] + .checkbox-indicator {
+  background: url("../img/sprit-check-off.png") no-repeat -5px -35px;
 }
 
 .fillers-wrapper input[type="checkbox"]:checked + .checkbox-indicator {
@@ -1215,7 +1235,11 @@ body {
   left: 0;
   width: 20px;
   height: 20px;
-  background: url("../img/sprite-check.png") no-repeat -5px -59px;
+  background: url("../img/sprit-check-on.png") no-repeat -5px -5px;
+}
+
+.fillers-wrapper label:hover input[type="checkbox"]:checked + .checkbox-indicator {
+  background: url("../img/sprit-check-on.png") no-repeat -5px -35px;
 }
 
 .settings button {
@@ -1342,19 +1366,19 @@ body {
 }
 
 .btn-social-tw {
-  background: url("../img/spritesheet.png") no-repeat -5px -330px;
+  background: url("../img/sprit-width-42px.png") no-repeat -5px -330px;
 }
 
 .btn-social-inst {
-  background: url("../img/spritesheet.png") no-repeat -5px -176px;
+  background: url("../img/sprit-width-42px.png") no-repeat -5px -176px;
 }
 
 .btn-social-fb {
-  background: url("../img/spritesheet.png") no-repeat -5px -111px;
+  background: url("../img/sprit-width-42px.png") no-repeat -5px -111px;
 }
 
 .btn-social-vk {
-  background: url("../img/spritesheet.png") no-repeat -5px -372px;
+  background: url("../img/sprit-width-42px.png") no-repeat -5px -372px;
 }
 
 .footer-info {
@@ -1383,7 +1407,7 @@ body {
   left: -21px;
   width: 15px;
   height: 13px;
-  background: url("../img/spritesheet.png") no-repeat -5px -153px;
+  background: url("../img/sprit-width-42px.png") no-repeat -5px -153px;
 }
 
 .footer-info a {
