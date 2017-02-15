@@ -39,7 +39,10 @@
               <div class="search">
                 <a href="#">Поиск</a>
                 <div class="search-popup">
-                  <input type="text" name="search" placeholder="Что ищем?">
+                  <label class="float-label">
+                    <input type="text" name="search" placeholder="Что ищем?">
+                    <span>Что ищем?</span>
+                  </label>
                 </div>
               </div>
 
@@ -47,11 +50,14 @@
                 <a href="#">Вход</a>
                 <div class="login-popup">
                   <form action="https://echo.htmlacademy.ru" method="post">
-                    <label class="placeholder">
+                    <label class="float-label">
                       <input type="text" name="email" placeholder="Электронная почта">
                       <span>Электронная почта</span>
                     </label>
-                    <input type="password" name="password" placeholder="Пароль">
+                    <label class="float-label">
+                      <input type="password" name="password" placeholder="Пароль">
+                      <span>Пароль</span>
+                    </label>
                     <button class="btn" type="submit">Войти</button>
                     <div class="login-href">
                       <a href="#">Забыли пароль?</a>
@@ -213,7 +219,10 @@
             <div class="border">
               <p>Подпишитесь на нашу сладкую рассылку и будите всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно=)</p>
               <form action="https://echo.htmlacademy.ru" method="post">
-                <input type="text" name="email" placeholder="Электронная почта">
+                <label class="float-label">
+                  <input type="text" name="email" placeholder="Электронная почта">
+                  <span>Электронная почта</span>
+                </label>
                 <button class="btn" type="submit">Отправить</button>
               </form>
             </div>
@@ -271,9 +280,18 @@
         <h2 class="modal-content-title">Мы обязательно вам ответим!</h2>
 
         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-          <input type="text" name="name" placeholder="Как вас зовут?">
-          <input type="text" name="email" placeholder="Ваша почта для ответа?">
-          <textarea name="comment" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+          <label class="float-label">
+            <input type="text" name="name" placeholder="Как вас зовут?">
+            <span>Как вас зовут?</span>
+          </label>
+          <label class="float-label">
+            <input type="text" name="email" placeholder="Ваша почта для ответа?">
+            <span>Ваша почта для ответа?</span>
+          </label>
+          <label class="float-label">
+            <textarea name="comment" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+            <span>Напишите что-нибудь...</span>
+          </label>
           <button class="btn" type="submit">Отправить</button>
         </form>
       </div>
