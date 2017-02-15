@@ -386,7 +386,11 @@ body {
 }
 
 .float-label input:focus::-webkit-input-placeholder,
-.float-label textarea:focus::-webkit-input-placeholder {
+.float-label input:focus::-moz-placeholder,
+.float-label input:focus:-ms-input-placeholder,
+.float-label textarea:focus::-webkit-input-placeholder,
+.float-label textarea:focus:-ms-input-placeholder,
+.float-label textarea:focus::-moz-placeholder {
   color: transparent;
 }
 
