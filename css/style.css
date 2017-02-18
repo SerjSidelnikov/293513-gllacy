@@ -1542,17 +1542,9 @@ body {
 }
 
 .footer-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
-  width: 340px;
+  display: inline-block;
+  vertical-align: top;
+  width: 330px;
   font-size: 13px;
   line-height: 18px;
 }
@@ -1578,8 +1570,21 @@ body {
 
 .footer-info a {
   width: 175px;
+  margin-right: 30px;
   color: #ffffff;
   text-decoration: none;
+}
+
+.footer-info a:nth-child(2) {
+  padding-right: 18px;
+}
+
+.footer-info a:nth-child(3) {
+  margin-right: 43px;
+}
+
+.footer-info a:last-child {
+  margin-right: 0;
 }
 
 .footer-info a:hover {
