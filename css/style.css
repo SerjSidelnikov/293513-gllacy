@@ -540,6 +540,10 @@ body {
   border-radius: 50%;
 }
 
+.title-description {
+  width: 217px;
+}
+
 .basket-item-count span {
   color: #999999;
 }
@@ -576,24 +580,26 @@ body {
 }
 
 .meta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  width: 170px;
+  /*display: -webkit-box;*/
+  /*display: -ms-flexbox;*/
+  display: block;
+  /*-webkit-box-orient: vertical;*/
+  /*-webkit-box-direction: normal;*/
+  /*-ms-flex-direction: column;*/
+  /*flex-direction: column;*/
+  /*-webkit-box-align: end;*/
+  /*-ms-flex-align: end;*/
+  /*align-items: flex-end;*/
+  width: 167px;
   margin-top: 5px;
   margin-left: auto;
+  text-align: right;
   color: #ffffff;
 }
 
 .meta-time {
   margin-bottom: 5px;
+  margin-right: 1px;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
