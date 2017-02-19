@@ -735,10 +735,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .item {
@@ -997,6 +998,8 @@ body {
 }
 
 .index-post-newsletter {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
   width: calc(46.6% * (100 / (100 - 2 * 2.3)));
   padding: 5px;
   background: #f8f7f4 url("../img/letter-pattern.png");
@@ -1458,9 +1461,14 @@ fillers-wrapper input:checked:disabled ~ span {
 }
 
 .catalog-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  justify-content: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   margin-bottom: 37px;
 }
 
