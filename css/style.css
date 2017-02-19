@@ -1005,7 +1005,7 @@ body {
   width: calc(46.6% * (100 / (100 - 2 * 2.3)));
   min-height: 220px;
   padding: 23px 22px;
-  background: #ffffff url("../img/strawberry-bg.jpg") no-repeat 50px -225px;
+  background: #ffffff url("../img/strawberry-bg.jpg") no-repeat center;
   border-radius: 15px;
   box-sizing: border-box;
 }
@@ -1134,7 +1134,7 @@ body {
 
 .index-map-info {
   position: absolute;
-  right: 31px;
+  right: 2.5%;
   top: 64px;
   width: 250px;
   padding: 28px 25px;
@@ -1150,7 +1150,7 @@ body {
 }
 
 .index-map-info .index-map-info-number {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .index-map-info b {
