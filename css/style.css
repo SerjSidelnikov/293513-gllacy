@@ -1415,6 +1415,20 @@ body {
   background: url("../img/spritesheet.png") no-repeat -10px -144px;
 }
 
+.fillers-wrapper input:disabled ~ span,
+fillers-wrapper input:checked:disabled ~ span {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.fillers-wrapper label:hover input[type="checkbox"]:disabled + .checkbox-indicator {
+  background: url("../img/spritesheet.png") no-repeat -15px -39px;
+}
+
+.fillers-wrapper label:hover input[type="checkbox"]:checked:disabled + .checkbox-indicator {
+  background: url("../img/spritesheet.png") no-repeat -10px -114px;
+}
+
 .settings button {
   -ms-flex-item-align: end;
   align-self: flex-end;
