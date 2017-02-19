@@ -1770,7 +1770,7 @@ fillers-wrapper input:checked:disabled ~ span {
   animation: shake 0.6s;
 }
 
-.modal-content-close {
+.modal-content .modal-content-close {
   position: absolute;
   top: 15px;
   right: 15px;
