@@ -1055,9 +1055,13 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  min-height: 210px;
   padding: 30px 20px;
   background-color: #f8f7f4;
   border-radius: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .index-post-newsletter p {
