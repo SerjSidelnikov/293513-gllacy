@@ -693,6 +693,8 @@ body {
 }
 
 .banner {
+  display: flex;
+  flex-direction: column;
   width: calc(46.6% * (100 / (100 - 2 * 2.3)));
   min-height: 230px;
   padding: 16px 20px;
@@ -713,15 +715,15 @@ body {
 
 .banner p {
   margin: 0;
-  margin-bottom: 44px;
 }
 
 .banner .btn {
   display: block;
   width: 125px;
+  margin-top: auto;
   margin-left: auto;
   margin-bottom: 5px;
-  padding: 11px 20px;
+  padding: 12px 20px;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
@@ -729,7 +731,7 @@ body {
 }
 
 .banner-chocolate .btn {
-  width: 154px;
+  width: 150px;
 }
 
 .banner-raspberry {
@@ -911,6 +913,8 @@ body {
 
 .index-about-left,
 .index-about-right {
+  display: flex;
+  flex-direction: column;
   width: calc(46.6% * (100 / (100 - 2 * 2.3)));
   padding-left: 55px;
   box-sizing: border-box;
@@ -925,6 +929,7 @@ body {
 
 .index-about p:last-child {
   margin-bottom: 0;
+  margin-top: auto;
 }
 
 .index-about-left .ice::before {
@@ -978,7 +983,10 @@ body {
 }
 
 .index-post-news {
+  display: flex;
+  flex-direction: column;
   width: calc(46.6% * (100 / (100 - 2 * 2.3)));
+  min-height: 220px;
   padding: 23px 22px;
   background: #ffffff url("../img/strawberry-bg.jpg") no-repeat 50px -225px;
   border-radius: 15px;
@@ -1008,9 +1016,11 @@ body {
 }
 
 .index-post-newsletter {
+  display: flex;
   -ms-flex-item-align: start;
   align-self: flex-start;
   width: calc(46.6% * (100 / (100 - 2 * 2.3)));
+  min-height: 220px;
   padding: 5px;
   background: #f8f7f4 url("../img/letter-pattern.png");
   border-radius: 15px;
@@ -1018,6 +1028,8 @@ body {
 }
 
 .index-post-newsletter .border {
+  display: flex;
+  flex-direction: column;
   padding: 30px 20px;
   background-color: #f8f7f4;
   border-radius: 15px;
@@ -1025,13 +1037,13 @@ body {
 
 .index-post-newsletter p {
   margin: 0;
-  margin-bottom: 35px;
 }
 
 .index-post-newsletter form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: auto;
   margin-bottom: 3px;
 }
 
