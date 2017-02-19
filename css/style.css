@@ -164,7 +164,7 @@ body {
 
 .navigation .active-menu {
   margin: 0;
-  padding: 5px 15px;
+  padding: 5px 14px;
   background-color: #d07058;
   border: none;
   border-radius: 20px;
@@ -173,7 +173,7 @@ body {
 .navigation li > a:hover,
 .navigation li > a:focus {
   margin: 0;
-  padding: 5px 15px;
+  padding: 5px 14px;
   color: #000000;
   background-color: #f7f6f3;
   border-radius: 20px;
